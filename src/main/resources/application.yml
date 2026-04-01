@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: messaging-sdk
+
+mensageria:
+  email:
+    enabled: true
+    host: smtp.gmail.com
+    port: 587
+    username: default@email.com
+    password: default123
+  whatsapp:
+    enabled: true
+    api-url: https://graph.facebook.com/v17.0/{phone_number_id}/messages
+    token: DEFAULT_TOKEN
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
